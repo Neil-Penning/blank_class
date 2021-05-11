@@ -2,9 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsthm, amsfonts, amssymb}
 \usepackage[a4paper, total={6.5in, 8.75in}]{geometry}
-%\usepackage[mode=buildnew]{standalone}% requires -shell-escape
 \usepackage[dvipsnames]{xcolor}
-%\usepackage{tikz}
 \usepackage{cancel}
 
 \newtheorem{lemma}{Lemma.}
@@ -22,34 +20,18 @@
 	bookmarksopen=true
 }
 
-\usepackage{fancyhdr}
-\newcommand\advancesec{%
-	\edef\prevlabel{sec:\arabic{currsec}}%
-	\addtocounter{currsec}{1}%
-	\label{sec:\arabic{currsec}}%
-	\addtocounter{nextsec}{1}%
-	\edef\nextlabel{sec:\arabic{nextsec}}%
-}
-
-\fancyhf{}
-\fancyhead[L]{\rightmark}
-\fancyhead[R]{\thepage}
-\fancyfoot[C]{\hyperlink{toc}{\tiny Table of Contents}}
-\fancyfoot[L]{\hyperlink{\prevlabel}{\tiny \autoref{\prevlabel}}}
-\fancyfoot[R]{\hyperlink{\nextlabel}{\tiny \autoref{\nextlabel}}}
 
 
-\newcounter{currsec}
-\setcounter{currsec}{0}
-\newcounter{nextsec}
-\setcounter{nextsec}{1}
-
-
-
-\newcommand\nonextlink{\fancyfoot[R]{}}
-
+% Metadata about paper.
+% It is seperate because this changes the most paper to paper.
 \input{meta.tex}
+
+
+% Include predefined packages
 \usepackage{../PenningTeX/PenningMaster}
 \usepackage{../PenningTeX/PenningHW}
 
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+% Optional set background to black, for "dark mode"
+%\pagecolor[rgb]{0.5,0.5,0.5}
+%\color[rgb]{1,1,1}
