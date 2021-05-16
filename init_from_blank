@@ -1,3 +1,10 @@
+# to use, run
+# . /path/to/init_blank_class GT-MATH-0000
+# in the parent directory of the desired folder.
+# github must already have a repo made
+# all else is handled automatically.
+
+
 #Clone blank_class from github
 git clone git@github.com:Neil-Penning/blank_class.git $1 --recurse-submodules
 cd $1
@@ -20,7 +27,7 @@ git commit -m "rename to $1"
 
 
 #find .tmp files and remove them
-find . | grep .tmp | git rm
+find . | grep .tmp | xargs git rm
 git commit -m "removed folder tmp files"
 
 #Push to intended origin
