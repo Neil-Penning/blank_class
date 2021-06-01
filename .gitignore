@@ -29,3 +29,5 @@ sagetex.sty
 *temp.tex
 
 *.swp
+
+*.sage.py
