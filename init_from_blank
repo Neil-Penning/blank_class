@@ -19,7 +19,6 @@ git remote add origin git@github.com:Neil-Penning/$1.git
 git rm init_from_blank
 
 #rename placeholder folders
-git mv 0000.code-workspace $1.code-workspace
 git mv ./Exercises/BLANK-0000-HW.tex ./Exercises/$1-HW.tex
 
 #commit changes
