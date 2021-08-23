@@ -1,0 +1,15 @@
+# /Users/np/.config/tmuxinator/0000hw.yml
+
+name: 0000hw
+root: ~/Documents/LaTeX/GT-MATH-0000/Exercises
+
+startup_window: run
+
+windows:
+    - editor: vim ./GT-MATH-0000-HW.tex
+    - run:
+        layout: even-horizontal
+        panes:
+            - pdflatex ./GT-MATH-0000-HW.tex 
+            - git status
+
