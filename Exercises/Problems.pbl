@@ -1,3 +1,2 @@
 # {number} : {name} {author}_{chapter}_{section}.[1, 4abc, 5];
-# Example from 4108:
-10 : Homework % Blekherman_10.[1, 2]; Lang_5.3.[2, 3ab]; Lang_5.4.[2, 4]
+python3 ~/Applications/createsections.py -m ./tex/ "1 : Homework % Penning.[1, 2ab, 3, 4, 5]"
