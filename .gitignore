@@ -31,3 +31,4 @@ sagetex.sty
 *.swp
 
 *.sage.py
+*.pdf
