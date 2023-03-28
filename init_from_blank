@@ -31,3 +31,6 @@ git commit -m "removed folder tmp files"
 
 #Push to intended origin
 git push --set-upstream origin master
+
+# Create empty folders
+mkdir -p ./Exercises/{work,hwset,hand,turn_in,img,opt_tex}
